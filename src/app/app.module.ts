@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { 
   MatInputModule,
   MatCardModule, 
   MatButtonModule,
   MatToolbarModule,
-  MatExpansionModule
+  MatExpansionModule,
 } from '@angular/material/';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +17,7 @@ import { BlogComponent } from './blog/blog.component';
 import { PosteCreateComponent } from './blog/posts/post-create/post-create.component';
 import { HeaderComponent } from './blog/header/header.component';
 import { PostsListComponent } from './blog/posts/posts-list/posts-list.component';
+import { PostsService } from './blog/posts/posts.service';
 
 
 @NgModule({
@@ -31,6 +33,7 @@ import { PostsListComponent } from './blog/posts/posts-list/posts-list.component
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatInputModule,
     MatCardModule,
     MatButtonModule,
