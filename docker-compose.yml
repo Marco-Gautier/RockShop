@@ -1,0 +1,10 @@
+version: '3'
+services:
+  node_api:
+    build: .
+    environment:
+    ports:
+      - "1338:1338"
+    volumes:
+      - ./logs:/app/logs
+    restart: always
