@@ -10,3 +10,4 @@
 vgcore.*
 node_modules
 menger
+.vscode
