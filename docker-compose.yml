@@ -1,10 +1,7 @@
 version: '3'
 services:
-  node_api:
+  angular_app:
     build: .
-    environment:
     ports:
-      - "1338:1338"
-    volumes:
-      - ./logs:/app/logs
+      - "1338:80"
     restart: always
